@@ -15,9 +15,11 @@ use projetoEstacionamento2\PHP\ControleEntrada;
 <HTML lang="pt-br">
 <head>
     <meta charset="UTF-8">
-
+    <link rel="stylesheet" href="../css/controller.css">
+  
 </head>
 <body>
+            <img src="../assets/images/logo.png" width="200px">
                 <h1>Controle de Entradas</h1>
     <form method="POST">
         <label>Código:</label>
@@ -68,7 +70,7 @@ use projetoEstacionamento2\PHP\ControleEntrada;
         ?>
         </button><br><br>     
         
-        <a href="ControllerSaida.php"><button>Controle de Saidas</button></a>
+        <button><a href="http://localhost/projetoEstacionamento2/PHP/ControllerSaida.php">Controle de Saidas</a></button>
 
        
     </form>

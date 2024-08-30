@@ -2,32 +2,32 @@
     namespace projetoEstacionamento2\PHP;
 
     class Mensalista {
-    private string $nome;
-    private string $telefone;
-    private string $endereco;
-    private string $carro;
-    private string $placa;
-    private string $cor;
-    private string $pagamento;
-    private string $valorMensal;
+    private string $nomeMensalista;
+    private string $telefoneMensalista;
+    private string $enderecoMensalista;
+    private string $carroMensalista;
+    private string $placaMensalista;
+    private string $corMensalista;
+    private string $pagamentoMensalista;
+    private string $valorMensalMensalista;
 
-        public function __construct(string $nome,
-                                    string $telefone,
-                                    string $endereco,
-                                    string $carro,
-                                    string $placa,
-                                    string $cor,
-                                    string $pagamento,
-                                    string $valorMensal)
+        public function __construct(string $nomeMensalista,
+                                    string $telefoneMensalista,
+                                    string $enderecoMensalista,
+                                    string $carroMensalista,
+                                    string $placaMensalista,
+                                    string $corMensalista,
+                                    string $pagamentoMensalista,
+                                    string $valorMensalMensalista)
         {
-            $this->nome = $nome;
-            $this->telefone = $telefone;
-            $this->endereco = $endereco;
-            $this->carro = $carro;
-            $this->placa = $placa;
-            $this->cor = $cor;
-            $this->pagamento = $pagamento;
-            $this->valorMensal = $valorMensal;
+            $this->nomeMensalista = $nomeMensalista;
+            $this->telefoneMensalista = $telefoneMensalista;
+            $this->enderecoMensalista = $enderecoMensalista;
+            $this->carroMensalista = $carroMensalista;
+            $this->placaMensalista = $placaMensalista;
+            $this->corMensalista = $corMensalista;
+            $this->pagamentoMensalista = $pagamentoMensalista;
+            $this->valorMensalMensalista = $valorMensalMensalista;
         }
 
         public function __get(string $name):mixed
@@ -39,19 +39,7 @@
             $this->name = $value;
         }//fim do set
 
-        public function imprimir():string
-        {
-            return 
-                   "<br>Nome: ".$this->nome.
-                   "<br>Telefone: ".$this->telefone.
-                   "<br>Endereço: ".$this->endereco.
-                   "<br>Carro: ".$this->carro.
-                   "<br>Placa do carro: ".$this->placa.
-                   "<br>Cor do carro: ".$this->cor.
-                   "<br>Data de Pagamento: ".$this->pagamento.
-                   "<br>Valor Mensal: ".$this->valorMensal;
-                   
-        }//fim do string
+       
     }//FIM CLASS
 
 ?>

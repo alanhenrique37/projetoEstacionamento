@@ -1,7 +1,7 @@
 <?php
 namespace projetoEstacionamento2\PHP;
 require_once('Mensalista.php');
-require_once('Main.php');
+
 
 
 use projetoEstacionamento2\PHP\ControllerMensalista;
@@ -15,48 +15,49 @@ use projetoEstacionamento2\PHP\Mensalista;
 <HTML lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/controller.css">
 
 </head>
 <body>
+        <img src="../assets/images/logo.png" width="200px">
                 <h1>Controller Mensalista</h1>
     <form method="POST">
         <label>Nome:</label>
-        <input type="text" id="nome" name="nome"/><br><br>
+        <input type="text" id="nomeMensalista" name="nomeMensalista"/><br><br>
 
         <label>Telefone:</label>
-        <input type="number" id="telefone" name="telefone"/><br><br>
+        <input type="number" id="telefoneMensalista" name="telefoneMensalista"/><br><br>
 
         <label>Endereço:</label>
-        <input type="text" id="endereco" name="endereco"/><br><br>
+        <input type="text" id="enderecoMensalista" name="enderecoMensalista"/><br><br>
 
         <label>Carro:</label>
-        <input type="text" id="carro" name="carro"/><br><br>
+        <input type="text" id="carroMensalista" name="carroMensalista"/><br><br>
 
         <label>Placa:</label>
-        <input type="text" id="placa" name="placa"/><br><br>
+        <input type="text" id="placaMensalista" name="placaMensalista"/><br><br>
 
         <label>Cor:</label>
-        <input type="text" id="cor" name="cor"/><br><br>
+        <input type="text" id="corMensalista" name="corMensalista"/><br><br>
 
         <label>Data de Pagamento:</label>
-        <input type="date" id="pagamento" name="pagamento"/><br><br>
+        <input type="date" id="pagamentoMensalista" name="pagamentoMensalista" placeholder="R$150,00"/><br><br>
 
         <label>Valor Mensal:</label>
-        <input type="number" id="valorMensal" name="valorMensal"/><br><br>
+        <input type="number" id="valorMensalMensalista" name="valorMensalMensalista"/><br><br>
 
 
         <button>Cadastrar
         <?php
             try{
-                $nome      = $_POST['nome'];
-                $telefone          = $_POST['telefone'];
-                $endereco         = $_POST['endereco'];
-                $carro         = $_POST['carro'];
-                $placa         = $_POST['placa'];
-                $cor        = $_POST['cor'];
-                $pagamento       = $_POST['pagamento'];
-                $valorMensal       = $_POST['valorMensal'];
-                $mensalista1 = new Mensalista($nome, $telefone, $endereco, $placa, $carro, $cor, $pagamento, $valorMensal);
+                $_SESSION['nomeMensalista']      = $_POST['nomeMensalista'];
+                $_SESSION['telefoneMensalista']         = $_POST['telefoneMensalista'];
+                $_SESSION['enderecoMensalista']        = $_POST['enderecoMensalista'];
+                $_SESSION['carroMensalista']         = $_POST['carroMensalista'];
+                $_SESSION['placaMensalista']         = $_POST['placaMensalista'];
+                $_SESSION['corMensalista']        = $_POST['corMensalista'];
+                $_SESSION['pagamentoMensalista']       = $_POST['pagamentoMensalista'];
+                $_SESSION['valorMensalMensalista']       = $_POST['valorMensalMensalista'];
             }catch(Exception $erro){
                 echo $erro;
             } //fim do try_catch
@@ -65,9 +66,7 @@ use projetoEstacionamento2\PHP\Mensalista;
         ?>
         </button><br><br>         
 
-        <?php 
-        echo $mensalista1->imprimir();
-        ?>
+        
 
     </form>
 </body>

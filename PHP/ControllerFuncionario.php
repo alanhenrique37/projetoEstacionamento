@@ -15,9 +15,10 @@ use projetoEstacionamento2\PHP\Funcionario;
 <HTML lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/controller.css">
 </head>
 <body>
+        <img src="../assets/images/logo.png" width="200px">
                 <h1>Controller Funcionario</h1>
 
     <form method="POST">

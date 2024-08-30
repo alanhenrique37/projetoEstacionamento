@@ -18,9 +18,10 @@ use projetoEstacionamento2\PHP\ControleSaida;
 <HTML lang="pt-br">
 <head>
     <meta charset="UTF-8">
-
+    <link rel="stylesheet" href="../css/controller.css">
 </head>
 <body>
+            <img src="../assets/images/logo.png" width="200px">
                 <h1>Controle de Saídas</h1>
 
     <?php

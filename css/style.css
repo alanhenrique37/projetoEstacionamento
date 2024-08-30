@@ -6,7 +6,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
 
 body {
-    font-family: 'Red Hat Text';
+    font-family: 'Red Hat Text', sans-serif;
    
 }
 .logo {
@@ -37,5 +37,94 @@ body {
     width:100px;
     height:5px;
     background-color: rgb(42, 111, 175) ;
-    margin-left: 440px;
+    margin-left: 480px;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+section h1 {
+    font-weight: bold;
+    font-size:55px;
+}
+
+.logoalan {
+    display: flex;
+    justify-content: center;
+}
+
+.info-footer {
+    display: flex;
+    justify-content: center;
+}
+
+.infsup {
+    margin-left: 22px;
+    font-size: 22px;
+    color:rgb(102, 99, 99);
+    font-family: 'Oswald';
+    font-weight: bold;
+}
+
+.infsup:hover {
+    color: #000;
+}
+
+.cop {
+    display: flex;
+    justify-content: space-between;
+    padding:0px 5px;
+}
+.cop h5 {
+    font-size: 16px;
+    font-weight: 600;
+}
+.bi {
+    margin-left: 10px;
+}
+
+.info-footer a {
+    list-style: none;
+    text-decoration: none;
+}
+.opcoes {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+h3 {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 30px;
+}
+a {
+    text-decoration: none;
+    color:#000
+}
+
+.men {
+    margin-bottom: 50px;
+}
+
+.fun {
+    margin-bottom: 50px;
+}
+
+a:hover {
+    color: rgb(42, 111, 175);
+}
+
+
+
+footer {
+    background-color: rgb(247, 241, 241);
+    margin-top: 100px;
+    border-radius:8px;
+    height:270px;    
 }
