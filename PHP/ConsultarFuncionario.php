@@ -8,7 +8,18 @@
    
     //Mostrar quem eu vou usar - reforço
     Use projetoEstacionamento2\PHP\ConsultarFuncionario;
-
+    ?>
+    <Doctype HTML>
+    <HTML lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../css/controller.css">
+    
+    </head>
+    <body>
+            <img src="../assets/images/logo.png" width="200px">
+                    <h1>Consultar Funcionários</h1>
+    <?php
 
 
 session_start();
@@ -36,6 +47,7 @@ echo "Cargo do funcionario:";
 echo $_SESSION['cargo'];
 echo "<br><br><br><br>";
 
+?>
 
 
 

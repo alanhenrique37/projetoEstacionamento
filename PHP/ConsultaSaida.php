@@ -14,7 +14,18 @@ require_once('ControleSaida.php');
     use projetoEstacionamento2\PHP\ControleSaida;
     Use projetoEstacionamento2\PHP\ConsultaSaida;
 
-
+    ?>
+    <Doctype HTML>
+    <HTML lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../css/controller.css">
+    
+    </head>
+    <body>
+            <img src="../assets/images/logo.png" width="200px">
+                    <h1>Consultar Saídas</h1>
+    <?php
     session_start();
     echo "Consulta de Entrada:";
     echo "<br><br>";
@@ -46,7 +57,7 @@ require_once('ControleSaida.php');
     echo "<br>";
     echo $this->valorr();
 
-
+    ?>
 
     
 

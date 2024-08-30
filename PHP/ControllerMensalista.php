@@ -50,6 +50,7 @@ use projetoEstacionamento2\PHP\Mensalista;
         <button>Cadastrar
         <?php
             try{
+                session_start();
                 $_SESSION['nomeMensalista']      = $_POST['nomeMensalista'];
                 $_SESSION['telefoneMensalista']         = $_POST['telefoneMensalista'];
                 $_SESSION['enderecoMensalista']        = $_POST['enderecoMensalista'];

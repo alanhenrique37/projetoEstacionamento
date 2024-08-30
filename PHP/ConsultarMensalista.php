@@ -8,8 +8,18 @@
    
     //Mostrar quem eu vou usar - reforço
     Use projetoEstacionamento2\PHP\ConsultarMensalista;
-
-
+    ?>
+    <Doctype HTML>
+    <HTML lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../css/controller.css">
+    
+    </head>
+    <body>
+            <img src="../assets/images/logo.png" width="200px">
+                    <h1>Consultar Mensalista</h1>
+    <?php
     session_start();
     echo "CADASTRO DE MENSALISTA:";
     echo "<br><br>";
@@ -36,7 +46,7 @@
     echo "<br>";
     echo "Valor mensal:";
     echo $_SESSION['valorMensalMensalista'];
-     
+     ?>
        
 
 
