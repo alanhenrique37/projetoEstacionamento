@@ -20,11 +20,35 @@ body {
     background-position: center;
 }
 
+.funcionario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.funcionario h4 {
+    color:#999;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
 .titulo {
     font-weight: bold;
     text-align: center;
     font-size: 40px;
     color: rgb(42, 111, 175);
+}
+
+.banner {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width:100vw;
+    background-color: rgb(2, 18, 27);
+    height:470px;
 }
 
 .titles {
@@ -44,11 +68,13 @@ section {
     display: flex;
     justify-content: center;
     margin-top: 50px;
+    margin-right: 50px;
 }
 
 section h1 {
     font-weight: bold;
     font-size:55px;
+    color:white
 }
 
 .logoalan {
@@ -64,9 +90,14 @@ section h1 {
 .infsup {
     margin-left: 22px;
     font-size: 22px;
-    color:rgb(102, 99, 99);
+    color:rgb(99, 101, 102);
     font-family: 'Oswald';
     font-weight: bold;
+}
+
+h4 {
+    font-weight: bold;
+    color:#ccc;
 }
 
 .infsup:hover {
@@ -102,7 +133,10 @@ h3 {
     margin-top: 20px;
     font-weight: bold;
     font-size: 30px;
+    color: white;
 }
+
+
 a {
     text-decoration: none;
     color:#000
@@ -116,11 +150,37 @@ a {
     margin-bottom: 50px;
 }
 
+.funci {
+    margin-bottom: 15px;
+}
+
 a:hover {
     color: rgb(42, 111, 175);
 }
 
 
+.h1-func {
+    font-size: 49px;
+    margin-right: 170px;
+}
+
+.opcoes.sec {
+    margin-left: 30px;
+    margin-right: 40px;
+}
+
+.banner.secc {
+    height: auto;
+}
+
+.bar.f {
+    margin-left: 390px;
+ 
+}
+
+.funcionario.mens {
+    margin-right: 100px;
+}
 
 footer {
     background-color: rgb(247, 241, 241);
@@ -128,3 +188,5 @@ footer {
     border-radius:8px;
     height:270px;    
 }
+
+

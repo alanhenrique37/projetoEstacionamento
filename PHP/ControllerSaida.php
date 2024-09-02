@@ -54,7 +54,7 @@ use projetoEstacionamento2\PHP\ControleSaida;
 
    echo "O valor total a se pagar: ";
    echo "<br>";
-   echo $this->valorr();
+
     
    
    

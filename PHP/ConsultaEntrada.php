@@ -18,11 +18,12 @@
     </head>
     <body>
             <img src="../assets/images/logo.png" width="200px">
-                    <h1>Consultar Entradas</h1>
+                    <h1>Relatório de Entradas</h1>
+
+            
     <?php
 
     session_start();
-    echo "Consulta de Entrada:";
     echo "<br><br>";
     echo "Código:";
     echo $_SESSION['codigoCliente'];
@@ -49,6 +50,9 @@
     echo $_SESSION['placaCliente'];
      
        ?>
+
+   </body>
+ </html>
 
 
 

@@ -18,10 +18,10 @@
     </head>
     <body>
             <img src="../assets/images/logo.png" width="200px">
-                    <h1>Consultar Mensalista</h1>
+                    <h1>Relatório de Mensalista</h1>
     <?php
     session_start();
-    echo "CADASTRO DE MENSALISTA:";
+ 
     echo "<br><br>";
     echo "Nome do mensalista:";
     echo $_SESSION['nomeMensalista'];

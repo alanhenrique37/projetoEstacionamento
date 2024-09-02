@@ -1,6 +1,7 @@
 <?php
 namespace projetoEstacionamento2\PHP;
 require_once('Mensalista.php');
+require_once('ControleSaida.php');
 
 
 
@@ -21,33 +22,34 @@ use projetoEstacionamento2\PHP\Mensalista;
 <body>
         <img src="../assets/images/logo.png" width="200px">
                 <h1>Controller Mensalista</h1>
-    <form method="POST">
-        <label>Nome:</label>
+    
+        <form method="POST">
+        <label><h3>Nome:</h3></label>
         <input type="text" id="nomeMensalista" name="nomeMensalista"/><br><br>
 
-        <label>Telefone:</label>
+        <label><h3>Telefone</h3></label>
         <input type="number" id="telefoneMensalista" name="telefoneMensalista"/><br><br>
 
-        <label>Endereço:</label>
+        <label><h3>Endereço:</h3></label>
         <input type="text" id="enderecoMensalista" name="enderecoMensalista"/><br><br>
 
-        <label>Carro:</label>
+        <label><h3>Carro:</h3></label>
         <input type="text" id="carroMensalista" name="carroMensalista"/><br><br>
 
-        <label>Placa:</label>
+        <label><h3>Placa:</h3></label>
         <input type="text" id="placaMensalista" name="placaMensalista"/><br><br>
 
-        <label>Cor:</label>
+        <label><h3>Cor:</h3></label>
         <input type="text" id="corMensalista" name="corMensalista"/><br><br>
 
-        <label>Data de Pagamento:</label>
+        <label><h3>Data de Pagamento:</h3></label>
         <input type="date" id="pagamentoMensalista" name="pagamentoMensalista" placeholder="R$150,00"/><br><br>
 
-        <label>Valor Mensal:</label>
+        <label><h3>Valor Mensal:</h3></label>
         <input type="number" id="valorMensalMensalista" name="valorMensalMensalista"/><br><br>
 
 
-        <button>Cadastrar
+        <button><div class="button-name">Cadastrar
         <?php
             try{
                 session_start();
@@ -65,7 +67,7 @@ use projetoEstacionamento2\PHP\Mensalista;
 
 
         ?>
-        </button><br><br>         
+        </div></button><br><br>         
 
         
 

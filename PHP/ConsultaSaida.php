@@ -4,7 +4,9 @@
     //Colocar qual classe eu utilizar
   
     require_once('ControleEntrada.php');
-require_once('ControleSaida.php');
+    require_once('ControleSaida.php');
+ 
+
 
 
 
@@ -14,6 +16,7 @@ require_once('ControleSaida.php');
     use projetoEstacionamento2\PHP\ControleSaida;
     Use projetoEstacionamento2\PHP\ConsultaSaida;
 
+   
     ?>
     <Doctype HTML>
     <HTML lang="pt-br">
@@ -24,10 +27,10 @@ require_once('ControleSaida.php');
     </head>
     <body>
             <img src="../assets/images/logo.png" width="200px">
-                    <h1>Consultar Saídas</h1>
+                    <h1>Relatório de Saídas</h1>
     <?php
     session_start();
-    echo "Consulta de Entrada:";
+
     echo "<br><br>";
     echo "Código:";
     echo $_SESSION['codigoCliente'];
@@ -55,9 +58,11 @@ require_once('ControleSaida.php');
     echo "<br><br><br>";
     echo "O valor total a se pagar: ";
     echo "<br>";
-    echo $this->valorr();
+    echo $controleSaida1->imprimir();
+    echo $controleSaida1->valorTotal((int)$horaSaida,(int)$horaEntrada);
 
     ?>
-
-    
+     
+   </body>
+ </html>
 

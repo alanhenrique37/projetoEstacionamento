@@ -18,12 +18,12 @@
     </head>
     <body>
             <img src="../assets/images/logo.png" width="200px">
-                    <h1>Consultar Funcionários</h1>
+                    <h1>Relatório de Funcionários</h1>
     <?php
 
 
 session_start();
-echo "CADASTRO DE FUNCIONÁRIO:";
+
 echo"<br><br>";
 echo "Nome do funcionario:"; 
 echo $_SESSION['nome'];
