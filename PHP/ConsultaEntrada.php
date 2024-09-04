@@ -8,6 +8,7 @@
    
     //Mostrar quem eu vou usar - reforço
     Use projetoEstacionamento2\PHP\ConsultaEntrada;
+    Use projetoEstacionamento2\PHP\ControllerEntrada;
     ?>
     <Doctype HTML>
     <HTML lang="pt-br">
